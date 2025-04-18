@@ -9,6 +9,12 @@ make
 ```
 The `get_appsmfcc_bin` executable should be produced.
 
+# Getting pre-built binaries
+Pre-built binaries can be obtained in Release section under pre-release tag:
+https://github.com/danilov-pd/mathtype_wmf_appsmfcc_extractor/releases/tag/pre-release
+
+I consider these releases as pre-release, because software is quite raw. 
+
 # Usage
 You can use this tool to extract AppsMFCC data from MathType WMF documents. Since MathType 6.0b this format is used for embedding MTEF (MathType binary math format) and MathML equation information in MathType WMF documents. Source: https://docs.wiris.com/mathtype/en/mathtype-office-tools/mathtype-7-for-windows-and-mac/mathtype-sdk/application-specific-metafile-comment-convention.html
 
