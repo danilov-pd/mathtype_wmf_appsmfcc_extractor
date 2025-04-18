@@ -1,0 +1,21 @@
+#!/bin/sh
+
+if [ "$#" -ne 2 ]; then
+    echo "Wrong number of arguments."
+    echo "Usage: get_appsmfcc INPUT_FILENAME OUTPUT_FILENAME_PREFIX"
+    exit 1
+fi
+
+SCRIPT_DIR=$(dirname "$(readlink -f -- "$0")")
+
+"$SCRIPT_DIR"/get_appsmfcc_bin "$1" "$2"
+
+[ "$?" -ne 0 ] && exit 2
+
+echo "Got files:"
+for f in "$2"*
+do
+    if [ -e "$f" ]; then
+        file "$f"
+    fi
+done
