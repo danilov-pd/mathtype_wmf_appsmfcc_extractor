@@ -43,3 +43,4 @@ Shell-script usage:
 # TODO
 - Add error code description.
 - Add a verbose mode which lists how many chunks have been read.
+- Rewrite parser to finite state machnine. Think about better (and elegant) implementation, maybe using other language. 
