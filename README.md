@@ -5,17 +5,18 @@ There are two versions of this tool, written in C and Python respectively.
 
 The C version is less picky to overall file structure. It searches only the needed `AppsMFCC` header and then reads the chunks sequentially into file(s). It doesnt't try to determine AppsMFCC content type (MTEF or XML with MathML).
 
-The Python version, on the other hand
+The Python version, on the other hand, validates the WMF file and the `AppsMFCC` records in it.
 
-*[New Python version](#python-version)
-    * [Usage](#usage)
-    * [Third-party works used in this script](#third-party-works-used-in-this-script)
-    * [How does it operate?](#how-does-it-operate)
-*[Old C version](#c-version) 
-    *[Compiling](#compiling)
-    *[Getting pre-built binaries](#getting-pre-built-binaries)
-    *[Usage](#usage-1)
-    *[TODO](#todo)
+# Contents
+* [New Python version](#python-version)
+   * [Usage](#usage)
+   * [Third-party works used in this script](#third-party-works-used-in-this-script)
+   * [How does it operate?](#how-does-it-operate)
+* [Old C version](#c-version) 
+  * [Compiling](#compiling)
+  * [Getting pre-built binaries](#getting-pre-built-binaries)
+  * [Usage](#usage-1)
+  * [TODO](#todo)
 
 # Python version
 
